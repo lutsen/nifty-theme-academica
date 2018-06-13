@@ -29,9 +29,7 @@ body {
 }
 
 .header-container {
-	background-color: @background-color-header;
-	background-position: center;
-	background-size: cover;
+	background-image: none !important;
 }
 
 .header {
@@ -43,7 +41,7 @@ body {
 	@media (min-width: 1120px) {
 		padding: 40px 819px 24px 24px;
 		width: 1120px;
-		min-height: 384px;
+		min-height: 204px;
 	}
 
 	a {
@@ -63,6 +61,7 @@ body {
 	.description {
 		.playfair-regular-italic;
 		padding: 0 16px;
+		font-style: italic;
 	}
 
 	.logo {
@@ -119,8 +118,19 @@ body {
 	}
 
 	@media (min-width: 1120px) {
-		margin: -344px 0px 0px 0px;
+		margin: -164px 0px 0px 0px;
 		width: 795px;
 		vertical-align: top;
+	}
+}
+
+.logo-displayed {
+	@media (min-width: 1120px) {
+		.header {
+			min-height: 384px;
+		}
+		.content {
+			margin-top: -344px;
+		}
 	}
 }
